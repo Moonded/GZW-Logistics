@@ -9,7 +9,7 @@ import types from "../assets/types.json";
         types.Types.map((type) => (
             <a
                 class="bg-blue-700 uppercase text-sm hover:bg-white hover:text-blue-700 w-max px-1 "
-                href={"/items#" + type.toLocaleLowerCase().replaceAll(" ", "")}
+                href={"/items?" + type.toLocaleLowerCase().replaceAll(" ", "")}
             >
                 {type}
             </a>

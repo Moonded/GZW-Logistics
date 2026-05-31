@@ -4,28 +4,29 @@ import types from "../assets/types.json";
 
 <div class="flex justify-center w-full mt-5">
     <div
-        id="ListNav"
+        id="navElement"
         class="grid lg:grid-rows-1 lg:grid-cols-[repeat(9, auto)] grid-rows-3 md:grid-rows-2 grid-flow-col-dense gap-1.5 w-max focus:outline-none"
     >
-        <a
+        <buton
             id="allitems"
-            class="navItems text-blue-700 bg-white px-1"
-            href="/items"
+            class="navItems text-blue-700 bg-white px-1 cursor-pointer select-none"
+            data-link-nav="allitem"
+            data-items-navbar
         >
             ALL ITEMS
-        </a>
+        </buton>
 
         {
             types.Types.map((t) => (
-                <a
-                    id={t.toLowerCase().replaceAll(" ", "")}
-                    class="navItems bg-blue-700 hover:bg-white hover:text-blue-700 px-1 focus:outline-none"
-                    href={"#" + t.toLowerCase().replaceAll(" ", "")}
+                <button
+                    id="navElement"
+                    class="navItems bg-blue-700 hover:bg-white hover:text-blue-700 px-1 focus:outline-none cursor-pointer select-none"
+                    data-link-nav={t.toLowerCase().replaceAll(" ", "")}
+                    data-items-navbar
                 >
                     {t.toUpperCase()}
-                </a>
+                </button>
             ))
         }
     </div>
 </div>
-<script src="../scripts/navbar.js"></script>
