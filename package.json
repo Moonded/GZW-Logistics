@@ -12,8 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.8.0",
+    "@prisma/client": "^7.8.0",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.4.2",
-    "tailwindcss": "^4.3.0"
+    "prisma": "^7.8.0",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.22.3"
   }
 }
