@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import Search from "../components/searchbar.astro";
+import Logo from "../assets/logo.png";
+import Categories from "../components/categories.astro";
+import Updates from "../components/Updates/index.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/logo.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Gray Zone Warfare Item Database</title>
+    </head>
+    <body class="bg-black text-white flex">
+        <Image
+            class="p-2 h-18 w-18 absolute"
+            src={Logo}
+            loading="eager"
+            alt="logo"
+        />
+
+        <div class="w-full">
+            <div
+                class="mt-24 ml-5 mr-5 sm:mt-32 sm:ml-10 sm:mr-10 md:mt-40 md:ml-40 md:mr-22"
+            >
+                <span class="text-neutral-500 text-sm"
+                    >Gray Zone Warfare Item Database</span
+                ><br />
+                <span class="font-bold text-l sm:text-2xl">
+                    Find your <a
+                        class="bg-blue-700 hover:bg-white hover:text-blue-700 px-1"
+                        href="/items#provisions">provisions</a
+                    >, <a
+                        class="bg-blue-700 hover:bg-white hover:text-blue-700 px-1"
+                        href="/items">items</a
+                    >, <a
+                        class="bg-blue-700 hover:bg-white hover:text-blue-700 px-1"
+                        href="/items#loot">loot</a
+                    > and more.<br />
+                    Search the most <i>up-to-date</i> database of all items.<br
+                    />
+                </span>
+                <Search />
+                <Categories />
+                <Updates />
+            </div>
+        </div>
+        <div
+            class="absolute bottom-1 text-neutral-700 text-[0.5rem] sm:text-xs w-full"
+        >
+            <div class="w-full flex justify-center text-center">
+                This website is not affiliated with Gray Zone Warfare (GZW) or
+                MADFINGER Games. <br /> All content is community driven and freely
+                available to everyone.
+            </div>
+        </div>
+    </body>
+</html>

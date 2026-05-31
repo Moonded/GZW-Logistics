@@ -1,0 +1,102 @@
+{
+  "Types": [
+    "Loot",
+    "Ammunition",
+    "Keys",
+    "Containers",
+    "Medical",
+    "Provisions",
+    "Repair Kits",
+    "Weapon Parts"
+  ],
+  "Loot": [
+    "Vices",
+    "Jewellery",
+    "Electronics",
+    "Funds",
+    "Evidence",
+    "Military Equipment",
+    "Military Mateirla",
+    "Laboratory Supplies",
+    "Workshop Supplies",
+    "Household Item",
+    "Tool"
+  ],
+  "Ammunition": [
+    "Pistol Catridges",
+    "PDW Catridges",
+    "Rifle Cadriges",
+    "Shotgun Catridges",
+    "Mortar Rounds"
+  ],
+  "Keys": [
+    "Ban Pa",
+    "Blue Lagoon",
+    "Fort Narith",
+    "Hunter's Paradise",
+    "Kiu Vongsa",
+    "Midnight Sapphire",
+    "Nam Thaven",
+    "Pha Lang",
+    "Pha Lang Airfield",
+    "Sawmill",
+    "Tiger Bay",
+    "YBL-1",
+    "Lamang Island"
+  ],
+  "Containers": [],
+  "Medical": [
+    "Bleeding Control",
+    "Bandages",
+    "Surgery Kits",
+    "Splints",
+    "Blood Bags",
+    "Pain Killers",
+    "Intoxication Pills",
+    "Stimulants"
+  ],
+  "Provisions": ["Food", "Drinks"],
+  "Repair Kits": ["Weapon Repair Kits", "Equipment Repair Kits"],
+  "Weapon Parts": {
+    "Weapon Parts": [
+      "Pistol Grips",
+      "Gas Blocks",
+      "Barrels",
+      "Upper Recievers",
+      "Handguards",
+      "Stocks",
+      "Charging Handles",
+      "Slides",
+      "Buffer Tubes",
+      "Stock Adapters",
+      "Auxiliary"
+    ],
+    "Weapon Attachments": [
+      "Mounts",
+      "Muzzle Devices",
+      "Suppressors",
+      "Foregrips",
+      "Tactical Devices"
+    ],
+    "Sights and Scopes": [
+      "Scopes",
+      "Collimator",
+      "Rear Iron Sights",
+      "Front Iron Sights"
+    ],
+    "Magazines": [
+      "12-Gauge",
+      "7.65 Browning",
+      "9x19mm",
+      ".45 ACP",
+      "4.6x30mm",
+      "5.45x39mm",
+      "5.56x45/.300BLK",
+      ".300 Blackout",
+      "7.62x25mm",
+      "7.62x39mm",
+      "7.62x51mm",
+      "7.62x54R"
+    ]
+  }
+}

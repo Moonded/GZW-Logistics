@@ -1,0 +1,31 @@
+---
+import types from "../assets/types.json";
+---
+
+<div class="flex justify-center w-full mt-5">
+    <div
+        id="ListNav"
+        class="grid lg:grid-rows-1 lg:grid-cols-[repeat(9, auto)] grid-rows-3 md:grid-rows-2 grid-flow-col-dense gap-1.5 w-max focus:outline-none"
+    >
+        <a
+            id="allitems"
+            class="navItems text-blue-700 bg-white px-1"
+            href="/items"
+        >
+            ALL ITEMS
+        </a>
+
+        {
+            types.Types.map((t) => (
+                <a
+                    id={t.toLowerCase().replaceAll(" ", "")}
+                    class="navItems bg-blue-700 hover:bg-white hover:text-blue-700 px-1 focus:outline-none"
+                    href={"#" + t.toLowerCase().replaceAll(" ", "")}
+                >
+                    {t.toUpperCase()}
+                </a>
+            ))
+        }
+    </div>
+</div>
+<script src="../scripts/navbar.js"></script>

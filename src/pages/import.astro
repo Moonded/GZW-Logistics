@@ -1,0 +1,20 @@
+---
+import Upload from "../components/upload.astro";
+import Nav from "../components/nav.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/logo.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Gray Zone Warfare Item Database</title>
+    </head>
+    <body class="bg-black text-white flex">
+        <div class="grid grid-cols-[61px_calc(61px-100vw)]">
+            <Nav page="home" />
+            <div id="content" class="w-[calc(100dvw-61px)]"><Upload /></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+---
+import Nav from "../../components/nav.astro";
+import Listnav from "../../components/listnav.astro";
+import Filter from "../../components/filterbar.astro";
+import "../../styles/global.css";
+
+import items from "../../assets/items.json";
+import Skeleton from "../../components/skeletonCard.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/logo.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Gray Zone Warfare Item Database</title>
+    </head>
+    <body class="bg-black text-white flex">
+        <div class="grid grid-cols-[61px_calc(61px-100vw)]">
+            <Nav page="home" />
+            <div id="content" class="w-[calc(100dvw-61px)] mb-10">
+                <Listnav />
+                <Filter />
+                <div class="flex justify-center w-full">
+                    <div
+                        id="items"
+                        class="grid grid-flow-dense grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 mt-5 px-2.5 gap-2.5 transition-all duration-150 w-max"
+                    >
+                        {items.map((item) => <Skeleton item={item} />)}
+                    </div>
+                    <script src="../../scripts/content.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+---
+const { item } = Astro.props;
+---
+
+<a
+    href={"items/" +
+        item.Category.toLowerCase().replaceAll(" ", "") +
+        "/" +
+        item.Name.toLowerCase().replaceAll(" ", "")}
+    class="w-max h-full"
+    data-name={item.Name.toLowerCase().replaceAll(" ", "")}
+>
+    <div
+        id={item.Name.toLowerCase().replaceAll(" ", "")}
+        class="h-full border border-neutral-800 hover:bg-neutral-900 hover:realtive hover:top-1 hover:-translate-1 hover:transition-[0.5s] grid grid-rows-[auto,10px]"
+    >
+        <img src={item.Image} alt={item.Name} class="w-37.5 h-max" />
+        <p class="flex h-full items-end justify-center">
+            {item.Name}
+        </p>
+    </div>
+</a>
